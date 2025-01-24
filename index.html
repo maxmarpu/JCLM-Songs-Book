@@ -88,7 +88,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // Wait for the DOM to load
         document.addEventListener("DOMContentLoaded", function () {
+            // Hide the splash screen after 3 seconds
+            setTimeout(function () {
+                document.getElementById('splash-screen').style.display = 'none';
+            }, 3000); // 3 seconds
             const lyrics = [
                 { title: "Siyonu Purama సీయోను పురమా", artist: "Pastor Raju", lyrics:"సీయోను పురమా- యెరుషలేము పట్టణమా\nపరిశుద్ద యేసుని పరిపూర్ణమా ||2||\n\n1.ముత్యాల గుమ్మాల ముద్దుల పట్టణం\nరంగుల కాంతుల రతనాల పట్టణం\n      నా యేసు రాజు జీవించే పట్టణం ॥2॥ ॥సీయోను॥\n2.చక్కని దేశం రానున్న రాజ్యం\nకళ్లల్లో కాంతుల విరజిమ్మె లోకం\nఈ కళ్ళు చాలవు ఆ కాంతి చూడా||2|| ॥సీయోను॥\n3.బంగారు వీధుల వింతలోకం\nవిజయము పొందిన విశ్వాసిలోకం\nశ్రమలన్ని తీరే స్థిరమైన లోకం ||2|| ॥సీయోను॥ \n\n Lyrics And Tune Pastor Raju" },
                 { title: "Stothramu Chesadha స్తోత్రము చేసెద ", artist: "Pastor Raju", lyrics: "స్తోత్రము చేసెద- సంతోష గీతము పాడెదా\nనీ క్రియలు చాటి ఘన పరచెదా\n\n1.క్షీణింపకుండా కన్నులను\nకృషియింపకుండా దేహమును\nకాపాడినావు నీ కనుపాపలా ||స్తోత్రము||\n\n2.నలిగిన మనసైన రక్షించినావు\nకలిగిన ఆపద తోలగించినావు\nనీమాట నాయందు నెరవేర్చినావు  ॥స్తోత్రము॥\n\n3.మెరలాలకించి విడిపించినావు\nనిరుపేదనైన కృపచూపినావు\nనా ప్రాణమును విమోచించినావు ॥స్తోత్రము॥ " },
