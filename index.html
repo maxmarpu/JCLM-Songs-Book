@@ -8,26 +8,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Custom Navbar Color */
         .custom-navbar {
-            background-image:url('lovepik-abstract-background-image_400150355.jpg'); /* Green color example */
+            background-image: url('lovepik-abstract-background-image_400150355.jpg'); /* Custom background image */
+            background-size: cover; /* Ensures the image covers the navbar */
+            background-position: center; /* Center the image */
+            color: white; /* White text color for visibility */
         }
-        .custom-hero {
-            background-image: url('cinematic-film-location-decor.jpg'); /* Replace with the path to your image */
-            background-size: cover; /* Ensures the image covers the entire header */
-            background-position: center; /* Centers the image */
-            color: white; /* Makes the text color white to stand out against the background */
+
+        .custom-navbar .navbar-brand,
+        .custom-navbar .nav-link {
+            color: white; /* White text */
+        }
+
+        .custom-navbar .nav-link:hover {
+            color: #ff5733; /* Hover effect color */
+        }
+
+        /* Custom Logo Style */
+        .navbar-brand img {
+            width: 50px; /* Adjust the logo size */
+            height: auto;
+            margin-right: 10px; /* Space between logo and text */
         }
     </style
 </head>
 
 <body>
-        <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <!-- Custom Navigation Bar with Logo and Background Image -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Lyrics Book</a>
-        </div>
-    </nav>
+            <!-- Logo added inside the navbar-brand -->
+            <a class="navbar-brand" href="#">
+                <img src="https://github.com/maxmarpu/JCLM-Songs-Book/blob/main/Leonardo_Phoenix_10_Design_a_vibrant_and_modern_logo_for_the_T_3.jpg?raw=true" alt="Logo"> Lyrics Book
+            </a>
     <header class="custom-hero text-white text-center py-5">
         <h1>JCLM SONGS BOOK</h1>
         <p>LYRICS AND TUNE PASTOR RAJU</p>
