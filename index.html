@@ -18,6 +18,11 @@
             background-position: center; /* Centers the image */
             color: white; /* Makes the text color white to stand out against the background */
         }
+         /* Custom Logo Style */
+        .navbar-brand img {
+            width: 50px; /* Adjust the logo size */
+            height: auto;
+        }
     </style>
 </head>
 
@@ -28,6 +33,16 @@
             <a class="navbar-brand" href="#">Lyrics Book</a>
         </div>
     </nav>
+    <!-- Custom Navigation Bar with Logo -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <!-- Logo added inside the navbar-brand -->
+            <a class="navbar-brand" href="#">
+                <img src="path/to/your/logo.png" alt="Logo"> Lyrics Book
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
     <header class="custom-hero text-white text-center py-5">
         <h1>JCLM SONGS BOOK</h1>
